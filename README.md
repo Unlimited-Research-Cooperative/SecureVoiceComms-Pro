@@ -6,13 +6,13 @@ About SecureVoiceComms-Pro: This repository hosts the cutting-edge SecureVoiceCo
 
 🌐 Features:
 
-    Military-Grade Encryption: Utilizes Advanced Encryption Standard (AES) and RSA encryption to safeguard communications against eavesdropping and interception.
-    Digital Signal Enhancement: Advanced DSP algorithms for crystal-clear voice quality and noise reduction.
-    Spread Spectrum Technology: Disguises transmission as noise, enhancing stealth and resistance to jamming.
-    Efficient Voice Compression: Implements high-quality codecs for bandwidth optimization without compromising clarity.
-    Robust Transmission Protocols: Custom modulation techniques for reliable communication over various terrains and conditions.
-    Intuitive User Interface: Designed for ease of use in high-pressure scenarios.
-    Scalable Architecture: Easily adaptable for different operation scales and requirements.
+Military-Grade Encryption: Utilizes Advanced Encryption Standard (AES) and RSA encryption to safeguard communications against eavesdropping and interception.
+Digital Signal Enhancement: Advanced DSP algorithms for crystal-clear voice quality and noise reduction.
+Spread Spectrum Technology: Disguises transmission as noise, enhancing stealth and resistance to jamming.
+Efficient Voice Compression: Implements high-quality codecs for bandwidth optimization without compromising clarity.
+Robust Transmission Protocols: Custom modulation techniques for reliable communication over various terrains and conditions.
+Intuitive User Interface: Designed for ease of use in high-pressure scenarios.
+Scalable Architecture: Easily adaptable for different operation scales and requirements.
 
 🛠 Intended Users: Developed with the needs of military operatives and law enforcement officers in mind, SecureVoiceComms-Pro is ideal for tactical communication scenarios where security and reliability are paramount.
 

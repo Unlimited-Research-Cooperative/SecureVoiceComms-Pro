@@ -23,5 +23,4 @@ About SecureVoiceComms-Pro: This repository hosts the cutting-edge SecureVoiceCo
 
 📖 Documentation: Comprehensive guides and API documentation are available for seamless integration and deployment.
 
-
-SecureVoiceComms-Pro is more than just a communication tool; it's a commitment to operational security and efficiency. Stay tuned for updates and feature enhancements. Your feedback and contributions are valuable in making this tool the best in its class for those who protect and serve.
+- SecureVoiceComms-Pro is more than just a communication tool; it's a commitment to operational security and efficiency. Stay tuned for updates and feature enhancements. Your feedback and contributions are valuable in making this tool the best in its class for those who protect and serve.

@@ -14,6 +14,7 @@ About SecureVoiceComms-Pro: This repository hosts the cutting-edge SecureVoiceCo
 - Intuitive User Interface: Designed for ease of use in high-pressure scenarios.
 - Scalable Architecture: Easily adaptable for different operation scales and requirements.
 
+
 🛠 Intended Users: Developed with the needs of military operatives and law enforcement officers in mind, SecureVoiceComms-Pro is ideal for tactical communication scenarios where security and reliability are paramount.
 
 📡 Use Case Scenarios: From covert operations to urban law enforcement missions, SecureVoiceComms-Pro is the go-to solution for encrypted voice communication in any setting.

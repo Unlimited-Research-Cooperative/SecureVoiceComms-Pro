@@ -22,5 +22,3 @@ About SecureVoiceComms-Pro: This repository hosts the cutting-edge SecureVoiceCo
 🔧 Contribution & Collaboration: We encourage contributions from experts in cryptography, digital signal processing, and tactical communication. Join us in enhancing and evolving SecureVoiceComms-Pro to meet the dynamic demands of military and police forces worldwide.
 
 📖 Documentation: Comprehensive guides and API documentation are available for seamless integration and deployment.
-
-- SecureVoiceComms-Pro is more than just a communication tool; it's a commitment to operational security and efficiency. Stay tuned for updates and feature enhancements. Your feedback and contributions are valuable in making this tool the best in its class for those who protect and serve.

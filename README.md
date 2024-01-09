@@ -56,6 +56,7 @@ Hardware:
     Connect the ADC and DAC modules to the Raspberry Pi Zero via the I2C interface.
 
 Enable I2C Interface
+
 Install Python 3 and PIP
 sudo apt install python3 python3-pip
 

@@ -35,8 +35,6 @@ Note
 Ensure your encryption key is stored and handled securely. The current implementation is a basic model and should be further adapted for specific operational environments.
 
 
-
-
 Work In Progress Notes:
 
 Hardware:

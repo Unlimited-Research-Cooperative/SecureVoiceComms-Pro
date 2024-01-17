@@ -1,131 +1,146 @@
-SecureVoiceComms-Pro
+markdown
 
-Advanced Encrypted Voice Communication System
+# SecureVoiceComms-Pro
 
-About SecureVoiceComms-Pro
+Advanced Encrypted Voice Communication System with Post Quantum Cryptography
+
+## About SecureVoiceComms-Pro
 
 SecureVoiceComms-Pro is an encrypted voice communication system designed for secure and reliable voice transmissions. Leveraging modern encryption techniques, it provides a robust solution for confidential and clear audio communication.
 
-🌐 Features:
+## Features:
 
-- Robust Encryption: Uses standard cryptographic libraries to secure communications.
+- Robust Encryption: Utilizes the NTRU post-quantum cryptographic library to secure communications.
 - Audio Processing: Digital signal processing for audio capture and playback.
 - File-based Transmission Simulation: Simulates transmission of encrypted voice data through file input/output.
 - Python-based: Developed in Python, enabling easy integration and customization.
 
-🛠 Intended Users
+## Intended Users:
+
 Ideal for users requiring secure communication channels in various domains, including business, remote work, and confidential discussions.
 
-📡 Use Case Scenarios
+## Use Case Scenarios:
+
 Versatile for scenarios like remote meetings, secure business conversations, and any situation where encrypted voice communication is crucial.
 
-🔧 Contribution & Collaboration
-Contributions from experts in cryptography, audio processing, and software development are welcome to enhance and refine SecureVoiceComms-Pro.
+## Hardware Setup:
 
-Setup and Usage
+- Audio Output (Headphone/Speaker): Connect the headphone/speaker pin to a DAC (Digital-to-Analog Converter) on the Raspberry Pi Zero to output decrypted audio signals.
+- Audio Input (Microphone): Connect the microphone pin to an ADC (Analog-to-Digital Converter) on the Raspberry Pi Zero to input audio signals.
+- Push-to-Talk (PTT) Control: Connect the PTT pin to a GPIO on the Raspberry Pi Zero to control the PTT button simulation.
+- Ground Connection: Ensure there is a common ground connection between the Raspberry Pi Zero and the radio.
+- ADC/DAC Modules: Connect the ADC (Analog-to-Digital Converter) and DAC (Digital-to-Analog Converter) modules to the Raspberry Pi Zero via the I2C interface.
 
-To use SecureVoiceComms-Pro, follow these steps:
-- Environment Setup: Ensure Python and necessary libraries (sounddevice, numpy, cryptography) are installed.
-- Recording Audio: Use the microphone for audio input. The system captures and processes this audio.
-- Encryption Key: Define a secure encryption key. Replace b'your-encryption-key-32bytes' in the script with a 32-byte key for AES-256 encryption.
-- Testing the Code: Execute test.ipynb to start the recording, encryption, simulated transmission, decryption, and playback process.
-- Output: The decrypted audio is saved as a .wav file, which can be played back to verify the process.
+## Enable I2C Interface:
 
-Note
-Ensure your encryption key is stored and handled securely. The current implementation is a basic model and should be further adapted for specific operational environments.
+1. Install Python 3 and PIP:
 
-
-Work In Progress Notes:
-
-Hardware:
-
-    Audio Output (Speaker):
-        Connect the speaker pin to a DAC (Digital-to-Analog Converter) on the Raspberry Pi Zero to output decrypted audio signals to the radio.
-
-    Audio Input (Microphone):
-        Connect the microphone pin to an ADC (Analog-to-Digital Converter) on the Raspberry Pi Zero to input audio signals from the radio for encryption.
-
-    PTT Control:
-        Connect the PTT pin to a GPIO on the Raspberry Pi Zero. You will control this GPIO within your software to simulate pressing the PTT button. When the GPIO is set to low, it should trigger the PTT.
-
-    Ground Connection:
-        Ensure there is a common ground connection between the Raspberry Pi Zero and the radio.
-        
-    Connect the ADC and DAC modules to the Raspberry Pi Zero via the I2C interface.
-
-Enable I2C Interface
-
-Install Python 3 and PIP
+```bash
 sudo apt install python3 python3-pip
+```
 
-Install Adafruit Libraries:
+    Install Adafruit Libraries:
+    
+```bash
 pip3 install adafruit-circuitpython-ads1x15 adafruit-circuitpython-mcp4725
+```
 
-Install Other Required Libraries:
+    Install Other Required Libraries:
+
+```bash
 pip3 install gpiozero
-
 pip3 install numpy
 pip3 install cryptography
+```
 
-Install SoundDevice Library:
+    Install SoundDevice Library:
+
+```bash
 pip3 install sounddevice
-
 sudo apt install libportaudio2
+```
+Running Your Scripts:
 
+Use the following command to run your main.py script:
 
-SCP, FTP, or by directly writing the files on the Raspberry Pi using a text editor
-Libraries to install 
-Run Your Scripts:
+```bash
 python3 main.py
+```
 
-use a crontab entry or create a systemd service
+Startup Scripts:
+
+You can use a crontab entry or create a systemd service for automatically running your scripts at startup.
+Using Crontab:
+
+Edit your crontab file:
+
+```bash
 crontab -e
+```
 
+Add the following line to the crontab file, replacing /path/to/your/main.py with the full path to your main.py script:
 
-@reboot python3 /path/to/your/main.py # Replace /path/to/your/main.py with the full path to your main.py script
-
+```bash
+@reboot python3 /path/to/your/main.py
+```
 
 Using Systemd Service:
-sudo nano /etc/systemd/system/myapp.service
 
-Add the following content to the service file:
+Create a systemd service file:
+
+```bash
+
+sudo nano /etc/systemd/system/myapp.service
+```
+
+Add the following content to the service file, replacing /path/to/your/main.py with the full path to your main.py script:
+
+```bash
+
 [Unit]
 Description=My App Service
 After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python3 /path/to/your/main.py # Replace /path/to/your/main.py with the full path to your main.py script
+ExecStart=/usr/bin/python3 /path/to/your/main.py
 
 [Install]
 WantedBy=multi-user.target
-
+```
 Enable the service to start on boot:
+
+```bash
+
 sudo systemctl enable myapp.service
-
+```
 Start the service:
+
+```bash
+
 sudo systemctl start myapp.service
+```
+Error Correction/Prevention Modules:
 
+- Frequency Hopping Spread Spectrum (FHSS)
+- Error Correction with Convolutional Redundancy and Fail-Safes
+- Convolutional Codes with Viterbi Decoding
+- Checksums or Cyclic Redundancy Checks (CRC)
+- Automatic Repeat Request (ARQ)
+- Forward Error Correction (FEC)
+- Reed-Solomon Encoding
+- Interleaving
 
-possible error correction/prevention modules:
+To-Do:
 
-Frequency Hopping Spread Spectrum (FHSS)
-Error Correction with Convolutional 
-Redundancy and Fail-Safes
-Convolutional Codes with Viterbi Decoding
-Checksums or Cyclic Redundancy Checks (CRC)
-Automatic Repeat Request (ARQ)
-Forward Error Correction (FEC)
-Reed-Solomon Encoding
-Interleaving
+- Configure voltage range for ADC/DAC (ADS1115 and MCP4725).
+- Ensure that the time.sleep(1/fs) matches the ADC/DAC clock.
 
+Hardware Information:
 
-todo:
-adc_dac.py: voltage range of adc/dac?
-time.sleep(1/fs): match adc/dac clock
+- ADC Module: ADS1115
+- DAC Module: MCP4725
 
-adc: ADS1115
-dac: MCP4725
 
 
 

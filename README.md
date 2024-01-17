@@ -1,8 +1,6 @@
-markdown
-
 # SecureVoiceComms-Pro
 
-Advanced Encrypted Voice Communication System with Post Quantum Cryptography
+Advanced Encrypted Voice Communication System with AES256
 
 ## About SecureVoiceComms-Pro
 
@@ -10,7 +8,7 @@ SecureVoiceComms-Pro is an encrypted voice communication system designed for sec
 
 ## Features:
 
-- Robust Encryption: Utilizes the NTRU post-quantum cryptographic library to secure communications.
+- Robust Encryption: Utilizes the AES256 cryptographic library to secure communications.
 - Audio Processing: Digital signal processing for audio capture and playback.
 - File-based Transmission Simulation: Simulates transmission of encrypted voice data through file input/output.
 - Python-based: Developed in Python, enabling easy integration and customization.

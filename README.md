@@ -33,19 +33,19 @@ Versatile for scenarios like remote meetings, secure business conversations, and
 
 ## Enable I2C Interface:
 
-1. Install Python 3 and PIP:
+Install Python 3 and PIP:
 
 ```bash
 sudo apt install python3 python3-pip
 ```
 
-    Install Adafruit Libraries:
+Install Adafruit Libraries:
     
 ```bash
 pip3 install adafruit-circuitpython-ads1x15 adafruit-circuitpython-mcp4725
 ```
 
-    Install Other Required Libraries:
+Install Other Required Libraries:
 
 ```bash
 pip3 install gpiozero
@@ -53,7 +53,7 @@ pip3 install numpy
 pip3 install cryptography
 ```
 
-    Install SoundDevice Library:
+Install SoundDevice Library:
 
 ```bash
 pip3 install sounddevice
